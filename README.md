@@ -46,3 +46,13 @@ Please confirm:
 - Confirmed sensory notes for Nekemete, Limu/Limousine and Djimma coffee
 
 Do not publish unverified claims about certifications, awards, export volumes, client names or factory capacity.
+
+## Update included: Leadership profiles
+
+This package updates the GitHub Pages website with:
+
+- Abebe Tafere Mulu added as Export Manager using the black-shirt portrait supplied in the update document.
+- Mr Getnet Shimekt Biratu's profile image updated to the standardised blue-shirt portrait.
+- Leadership section revised into a consistent two-card layout for mobile and desktop viewing.
+
+To publish the update, upload and overwrite the files in the existing `aron-coffee-website` GitHub repository, keeping `index.html` at the repository root.

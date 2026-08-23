@@ -45,3 +45,14 @@ button,input,textarea,select{font:inherit}
 @media (min-width:640px){.trust-grid{grid-template-columns:repeat(3,1fr)}.timeline{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(3,1fr)}.inquiry-form{grid-template-columns:1fr 1fr;padding:1.4rem}.product-card.featured{grid-column:1/-1;display:grid;grid-template-columns:1.05fr 1fr}.product-card.featured img{height:100%;min-height:320px}.section{padding:5.4rem 0}.hero-content{padding-bottom:4.2rem}}
 @media (min-width:920px){body{padding-bottom:0}.mobile-cta{display:none}.menu-toggle{display:none}.site-nav{position:static;transform:none;opacity:1;pointer-events:auto;display:flex;align-items:center;background:transparent;border:0;box-shadow:none;padding:0;gap:.25rem}.site-nav a{font-size:.9rem;padding:.68rem .75rem}.site-nav .nav-cta{padding:.78rem 1rem;border-radius:999px}.hero{min-height:780px;align-items:center}.hero-overlay{background:linear-gradient(90deg,rgba(20,12,8,.92),rgba(20,12,8,.66) 45%,rgba(20,12,8,.15)),linear-gradient(0deg,rgba(20,12,8,.55),transparent 45%)}.hero-content{padding-top:7rem}.trust-grid{grid-template-columns:repeat(5,1fr)}.split{grid-template-columns:1fr 1fr;gap:4rem}.split-reverse-mobile{direction:rtl}.split-reverse-mobile>*{direction:ltr}.mini-cards{grid-template-columns:repeat(3,1fr)}.timeline{grid-template-columns:repeat(3,1fr)}.product-grid{grid-template-columns:repeat(4,1fr)}.product-card.featured{grid-column:span 2}.quality-layout{grid-template-columns:1fr 1fr;align-items:center;gap:4rem}.founder-card{grid-template-columns:.8fr 1.2fr;align-items:center;padding:1.2rem}.founder-card>div{padding:2rem}.gallery-grid{grid-template-columns:repeat(6,1fr)}.contact-grid{grid-template-columns:.75fr 1.25fr;align-items:start;gap:2rem}.footer-grid{grid-template-columns:1.2fr .7fr 1fr;align-items:start}.site-footer{padding-bottom:2rem}}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+/* Updated leadership layout: Founder + Export Manager */
+.leadership-grid{display:grid;gap:1rem;margin-top:1.4rem}
+.leader-card{background:var(--white);border:1px solid rgba(43,23,17,.08);border-radius:28px;overflow:hidden;box-shadow:var(--shadow);display:grid}
+.leader-card img{width:100%;height:360px;object-fit:cover;object-position:top center;background:#fff}
+.leader-card>div{padding:1.2rem}
+.leader-card h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.7rem,6vw,2.65rem);line-height:1;margin:.45rem 0 .25rem;color:var(--brown);letter-spacing:-.035em}
+.leader-card p{margin:.6rem 0 0;color:var(--muted)}
+.leader-primary{border-top:5px solid var(--gold)}
+@media (min-width:760px){.leadership-grid{grid-template-columns:1fr 1fr;align-items:stretch}.leader-card img{height:430px}}
+@media (min-width:1040px){.leader-primary{grid-column:span 1}.leader-card>div{padding:1.55rem}.leader-card img{height:500px}}
