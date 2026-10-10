@@ -1,0 +1,2 @@
+Open https://github.com/arontradingcoffee-cpu/aron-coffee-website
+Extract this ZIP. Upload index.html, styles.css, sw.js and the assets folder to the repository root using Add file > Upload files. Keep the poster inside assets. Commit the changes to main. GitHub Pages will publish the update.

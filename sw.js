@@ -1,4 +1,4 @@
-const CACHE_NAME = 'aron-coffee-v1';
+const CACHE_NAME = 'aron-coffee-v2-portugal-2026';
 const ASSETS = [
   './',
   './index.html',
@@ -6,6 +6,7 @@ const ASSETS = [
   './script.js',
   './manifest.webmanifest',
   './assets/logo_badge.webp',
+  './assets/portugal-forum-2026.webp',
   './assets/hero-coffee-origin.webp',
   './assets/founder_suit.webp',
   './assets/aron-company-profile.pdf'
