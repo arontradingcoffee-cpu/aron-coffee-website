@@ -46,3 +46,42 @@ if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('./sw.js').catch(() => {});
   });
 }
+
+// Event countdown uses the published date at midnight in Lisbon (UTC in December).
+const countdown = document.querySelector('#event-countdown');
+if (countdown) {
+  const eventStart = Date.parse('2026-12-10T00:00:00Z');
+  const eventEnd = Date.parse('2026-12-12T00:00:00Z');
+  function updateEventCountdown() {
+    const now = Date.now();
+    if (now >= eventStart) {
+      countdown.textContent = now < eventEnd ? 'The event dates are here: 10–11 December 2026.' : 'Thank you for your interest in the Portugal 2026 event.';
+      return;
+    }
+    const totalHours = Math.floor((eventStart - now) / 3600000);
+    countdown.replaceChildren();
+    [['Days', Math.floor(totalHours / 24)], ['Hours', totalHours % 24]].forEach(([label, value]) => {
+      const unit = document.createElement('span');
+      unit.className = 'count-unit';
+      const number = document.createElement('strong');
+      number.textContent = String(value).padStart(2, '0');
+      const caption = document.createElement('small');
+      caption.textContent = label;
+      unit.append(number, caption);
+      countdown.append(unit);
+    });
+  }
+  updateEventCountdown();
+  setInterval(updateEventCountdown, 60000);
+}
+const motionButton = document.querySelector('#campaign-motion');
+if (motionButton) {
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  motionButton.hidden = reducedMotion.matches;
+  reducedMotion.addEventListener('change', event => { motionButton.hidden = event.matches; });
+  motionButton.addEventListener('click', () => {
+    const paused = document.body.classList.toggle('campaign-paused');
+    motionButton.setAttribute('aria-pressed', String(paused));
+    motionButton.textContent = paused ? 'Resume animation' : 'Pause animation';
+  });
+}

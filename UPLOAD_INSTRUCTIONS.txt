@@ -1,2 +1,1 @@
-Open https://github.com/arontradingcoffee-cpu/aron-coffee-website
-Extract this ZIP. Upload index.html, styles.css, sw.js and the assets folder to the repository root using Add file > Upload files. Keep the poster inside assets. Commit the changes to main. GitHub Pages will publish the update.
+Extract this ZIP. Open https://github.com/arontradingcoffee-cpu/aron-coffee-website and select Add file > Upload files. Upload index.html, styles.css, script.js, sw.js and the assets folder into the repository root. Commit to main. The poster must remain inside assets. This package includes the previous poster update and the new animated marketing banner.

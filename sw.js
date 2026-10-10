@@ -1,4 +1,4 @@
-const CACHE_NAME = 'aron-coffee-v2-portugal-2026';
+const CACHE_NAME = 'aron-coffee-v3-portugal-marketing';
 const ASSETS = [
   './',
   './index.html',
